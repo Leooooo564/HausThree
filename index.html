@@ -11,7 +11,25 @@
 
 <body>
   <canvas id="bg"></canvas>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="/3d.js"></script>
+  <script src="/main.js"></script>
+
+
+  <div class="side-ctrl-panel">
+    <div class="ctrl-panel">
+      <div class="ctrl-panel-header">
+        <h2>Controls</h2>
+      </div>
+      <div class="controls">
+        <div class="slider">
+          <input id="pi_input" type="range" min="0" max="2" value="0.5" step="any">
+          <p>Value: <output id="value"></output></p>
+        </div>
+      </div>
+
+
+    </div>
+
 </body>
 
 </html>

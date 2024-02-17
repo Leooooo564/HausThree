@@ -6,3 +6,15 @@ canvas {
   height: 100%;
   width: 100%;
 }
+
+.side-ctrl-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 70%;
+  margin: 7.5% 0;
+  background-color: #1b1b80;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+}
