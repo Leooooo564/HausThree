@@ -11,8 +11,7 @@
 
 <body>
   <canvas id="bg"></canvas>
-  <script type="module" src="/3d.js"></script>
-  <script src="/main.js"></script>
+
 
 
   <div class="side-ctrl-panel">
@@ -21,15 +20,38 @@
         <h2>Controls</h2>
       </div>
       <div class="controls">
+
         <div class="slider">
-          <input id="pi_input" type="range" min="0" max="2" value="0.5" step="any">
-          <p>Value: <output id="value"></output></p>
+          <h4>width</h4>
+          <input id="width_input" type="range" min="2" max="50" value="15" step="any">
+          <output id="width_value"></output>
         </div>
+
+        <div class="slider">
+          <h4>height</h4>
+          <input id="height_input" type="range" min="2" max="50" value="10" step="any">
+          <output id="height_value"></output>
+        </div>
+
+        <div class="slider">
+          <h4>depth</h4>
+          <input id="depth_input" type="range" min="2" max="50" value="20" step="any">
+          <output id="depth_value"></output>
+        </div>
+
+        <div class="slider">
+          <h4>thickness</h4>
+          <input id="thick_input" type="range" min="0" max="2" value="0.5" step="any">
+          <output id="thick_value"></output>
+        </div>
+
       </div>
-
-
     </div>
 
+
+  </div>
+  <script type="module" src="/3d.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
