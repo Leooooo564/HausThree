@@ -79,9 +79,13 @@ function createWall(x, y, z, width, height, depth) {
 }
 
 // ground
+const Texture = new THREE.TextureLoader().load("texture.jpg");
 const ground = new THREE.Mesh(
   new THREE.PlaneGeometry(1000, 1000, 10, 10),
-  new THREE.MeshBasicMaterial({ color: 0x161838 })
+  new THREE.MeshToonMaterial({
+    color: 0x161838,
+    map: Texture,
+  })
 );
 ground.rotation.x = -Math.PI / 2;
 scene.add(ground);
